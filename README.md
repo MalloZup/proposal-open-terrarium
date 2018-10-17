@@ -16,6 +16,11 @@ This project claims to be a common/shared entrypoint for deploying CEPH.
 
 The best places for this new repository would fit under the CEPH GitHub organisation upstream.
 
+# Design/Architectures:
+
+Components of project:
+https://github.com/MalloZup/ceph-open-terrarium/blob/master/ARCHITECTURE.md
+
 ### Deployment:
 
 The project use terraform-libvirt which i am co-maintaining and it is a SUSE opensource software. ( see https://github.com/dmacvicar/terraform-provider-libvirt).
@@ -38,3 +43,31 @@ One could use saltstack or ansible.
 With saltstack we prepare all vms for setting up the minion and salt-master for deepsea.
 
 Ansible at moment is not implemented but community can implement it easy.
+
+# Documentation:
+
+You can read https://github.com/MalloZup/ceph-open-terrarium.
+
+# Examples:
+
+Once you have installed, you can see the examples. ( this examples are automatically validate by terraform travis ci).
+https://github.com/MalloZup/ceph-open-terrarium/tree/master/examples
+
+
+The  `sles12s3p example` is at moment more complete.
+https://github.com/MalloZup/ceph-open-terrarium/blob/master/examples/sles12sp3.tf
+
+As you can see we resize the root partition with cloudinit, and we can attach also multiples disks by demand.
+
+### Terraform-libvirt-plugin:
+
+For the documentation have a look here:
+
+https://github.com/dmacvicar/terraform-provider-libvirt
+
+
+Example upstream are here:
+https://github.com/dmacvicar/terraform-provider-libvirt/tree/master/examples
+
+For example we can have also multiples URI: https://github.com/dmacvicar/terraform-provider-libvirt/blob/master/examples/multiple/main.tf
+
