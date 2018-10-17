@@ -12,9 +12,15 @@ Ceph-open-terrarium deploy ceph cluster with terraform, provisioning with saltst
 # Motivation
 [motivation]: #motivation
 
-This project claims to be a common/shared entrypoint for deploying CEPH.
+This project claims to be a common/shared entrypoint for deploying CEPH upstream.
 
-The best places for this new repository would fit under the CEPH GitHub organisation upstream.
+The best places for this new repository would fit under the CEPH GitHub Org organisation upstream.
+
+Having `ceph-open-terrarium` upstream directly will improve the deployment and shared best practices in different distros-ecosystems.
+
+The project is designed to be community driven and modular, so different Terraform backend could be added (cloud/vmware etc), and also different provisioning systems (saltstack, ansible, etc).
+
+Within this pattern we share the overall design but the single component can be replaced without diffulty. 
 
 # Design/Architectures:
 
