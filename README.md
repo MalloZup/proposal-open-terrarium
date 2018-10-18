@@ -71,9 +71,11 @@ For the documentation have a look here:
 
 https://github.com/dmacvicar/terraform-provider-libvirt
 
-
 Example upstream are here:
 https://github.com/dmacvicar/terraform-provider-libvirt/tree/master/examples
 
-For example we can have also multiples URI: https://github.com/dmacvicar/terraform-provider-libvirt/blob/master/examples/multiple/main.tf
+### Scalabilty of KVM-libvirt (multiple URI)
 
+We support also currently multiples URI, so if you have 3 KVM server you could also share the servers.
+
+For example we can have also multiples URI: https://github.com/dmacvicar/terraform-provider-libvirt/blob/master/examples/multiple/main.tf
